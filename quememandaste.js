@@ -1,0 +1,2 @@
+json={"params":{"password":"aragon2A@","deviceId":"4619de4f81cab795","username":"u201510923","lang":"es","versionId":"2.0.0","os_version":"3.10.73-ge0bfb9b","model":"Nexus%2B6P"},"appId":"2418553555815728","methodName":"invoke"}&
+json=%7B%22params%22%3A%7B%22password%22%3A%22aragon2A@%22%2C%22deviceId%22%3A%224619de4f81cab795%22%2C%22username%22%3A%22u201510923%22%2C%22lang%22%3A%22es%22%2C%22versionId%22%3A%222.0.0%22%2C%22os_version%22%3A%223.10.73-ge0bfb9b%22%2C%22model%22%3A%22Nexus%2B6P%22%7D%2C%22appId%22%3A%222418553555815728%22%2C%22methodName%22%3A%22invoke%22%7D&
