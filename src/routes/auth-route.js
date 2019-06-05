@@ -168,138 +168,337 @@ router.post('/coursesprofessors', (req, res) => {
 
 router.post('/coursesgrades', (req, res) => {
     let json = {
-        "response":{
-           "responseGradesList":{
-              "percentProgress":"100%",
-              "descFormula":"10% (TB1) + 30% (TB2) + 20% (EX1) + 40% (EX2)",
-              "message":"",
-              "list":[
-                 {
-                    "descFormula":"10% (TB1) + 30% (TB2) + 20% (EX1) + 40% (EX2)",
-                    "average":"15.86",
-                    "cellId":"section",
-                    "percentProgress":"100%"
-                 },
-                 {
-                    "PesoPonderado":"20%",
-                    "color":"#33ab35",
-                    "NumPrueba":"1",
-                    "CodTipoPrueba":"EX",
-                    "Nota":"15,55",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"EXPOSICIÓN"
-                 },
-                 {
-                    "PesoPonderado":"40%",
-                    "color":"#33ab35",
-                    "NumPrueba":"2",
-                    "CodTipoPrueba":"EX",
-                    "Nota":"16,4",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"EXPOSICIÓN"
-                 },
-                 {
-                    "PesoPonderado":"10%",
-                    "color":"#980404",
-                    "NumPrueba":"1",
-                    "CodTipoPrueba":"TB",
-                    "Nota":"12,23",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"TRABAJO"
-                 },
-                 {
-                    "PesoPonderado":"30%",
-                    "color":"#33ab35",
-                    "NumPrueba":"2",
-                    "CodTipoPrueba":"TB",
-                    "Nota":"16,58",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"TRABAJO"
-                 },
-                 {
-                    "PesoPonderado":"100%",
-                    "color":"#33ab35",
-                    "NumPrueba":"1",
-                    "CodTipoPrueba":"PF",
-                    "Nota":"16",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"PROMEDIO FINAL"
-                 }
+      "response": {
+          "responseGradesList": {
+              "percentProgress": "100%",
+              "descFormula": "10% (TB1) + 30% (TB2) + 20% (EX1) + 40% (EX2)",
+              "message": "",
+              "list": [
+                  {
+                      "descFormula": "10% (TB1) + 30% (TB2) + 20% (EX1) + 40% (EX2)",
+                      "average": "15.86",
+                      "cellId": "section",
+                      "percentProgress": "100%"
+                  },
+                  {
+                      "PesoPonderado": "20%",
+                      "color": "#33ab35",
+                      "NumPrueba": "1",
+                      "CodTipoPrueba": "EX",
+                      "Nota": "15,55",
+                      "cellId": "empty",
+                      "DesTipoPrueba": "EXPOSICIÓN"
+                  },
+                  {
+                      "PesoPonderado": "40%",
+                      "color": "#33ab35",
+                      "NumPrueba": "2",
+                      "CodTipoPrueba": "EX",
+                      "Nota": "16,4",
+                      "cellId": "empty",
+                      "DesTipoPrueba": "EXPOSICIÓN"
+                  },
+                  {
+                      "PesoPonderado": "10%",
+                      "color": "#980404",
+                      "NumPrueba": "1",
+                      "CodTipoPrueba": "TB",
+                      "Nota": "12,23",
+                      "cellId": "empty",
+                      "DesTipoPrueba": "TRABAJO"
+                  },
+                  {
+                      "PesoPonderado": "30%",
+                      "color": "#33ab35",
+                      "NumPrueba": "2",
+                      "CodTipoPrueba": "TB",
+                      "Nota": "16,58",
+                      "cellId": "empty",
+                      "DesTipoPrueba": "TRABAJO"
+                  },
+                  {
+                      "PesoPonderado": "100%",
+                      "color": "#33ab35",
+                      "NumPrueba": "1",
+                      "CodTipoPrueba": "PF",
+                      "Nota": "16",
+                      "cellId": "empty",
+                      "DesTipoPrueba": "PROMEDIO FINAL"
+                  }
               ],
-              "status":"OK",
-              "average":"15.86"
-           }
-        }
-     }
+              "status": "OK",
+              "average": "15.86"
+          }
+      }
+  }
 
     res.status(200).send(json)
 });
 
 router.post('/schedule', (req, res) => {
     let json = {
-        "response":{
-           "responseGradesList":{
-              "percentProgress":"100%",
-              "descFormula":"10% (TB1) + 30% (TB2) + 20% (EX1) + 40% (EX2)",
-              "message":"",
-              "list":[
-                 {
-                    "descFormula":"10% (TB1) + 30% (TB2) + 20% (EX1) + 40% (EX2)",
-                    "average":"15.86",
-                    "cellId":"section",
-                    "percentProgress":"100%"
-                 },
-                 {
-                    "PesoPonderado":"20%",
-                    "color":"#33ab35",
-                    "NumPrueba":"1",
-                    "CodTipoPrueba":"EX",
-                    "Nota":"15,55",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"EXPOSICIÓN"
-                 },
-                 {
-                    "PesoPonderado":"40%",
-                    "color":"#33ab35",
-                    "NumPrueba":"2",
-                    "CodTipoPrueba":"EX",
-                    "Nota":"16,4",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"EXPOSICIÓN"
-                 },
-                 {
-                    "PesoPonderado":"10%",
-                    "color":"#980404",
-                    "NumPrueba":"1",
-                    "CodTipoPrueba":"TB",
-                    "Nota":"12,23",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"TRABAJO"
-                 },
-                 {
-                    "PesoPonderado":"30%",
-                    "color":"#33ab35",
-                    "NumPrueba":"2",
-                    "CodTipoPrueba":"TB",
-                    "Nota":"16,58",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"TRABAJO"
-                 },
-                 {
-                    "PesoPonderado":"100%",
-                    "color":"#33ab35",
-                    "NumPrueba":"1",
-                    "CodTipoPrueba":"PF",
-                    "Nota":"16",
-                    "cellId":"empty",
-                    "DesTipoPrueba":"PROMEDIO FINAL"
-                 }
-              ],
-              "status":"OK",
-              "average":"15.86"
-           }
-        }
-     }
+      "response":{
+         "scheduleResponse":{
+            "status":"OK",
+            "detail":{
+               "previousWeekToDisplay":"06/08/2017",
+               "previousWeek":"August 6, 2017",
+               "weeksToDisplay":"Semana del 13/08/2017 al 19/08/2017",
+               "nextWeek":"August 20, 2017",
+               "modules":[
+                  {
+                     "module":"07:00 a 08:00"
+                  },
+                  {
+                     "module":"08:00 a 09:00"
+                  },
+                  {
+                     "module":"09:00 a 10:00"
+                  },
+                  {
+                     "module":"10:00 a 11:00"
+                  },
+                  {
+                     "module":"11:00 a 12:00"
+                  },
+                  {
+                     "module":"12:00 a 13:00"
+                  },
+                  {
+                     "module":"13:00 a 14:00"
+                  },
+                  {
+                     "module":"14:00 a 15:00"
+                  },
+                  {
+                     "module":"15:00 a 16:00"
+                  },
+                  {
+                     "module":"16:00 a 17:00"
+                  },
+                  {
+                     "module":"17:00 a 18:00"
+                  },
+                  {
+                     "module":"18:00 a 19:00"
+                  },
+                  {
+                     "module":"19:00 a 20:00"
+                  },
+                  {
+                     "module":"20:00 a 21:00"
+                  },
+                  {
+                     "module":"21:00 a 22:00"
+                  },
+                  {
+                     "module":"22:00 a 23:00"
+                  },
+                  {
+                     "module":"23:00 a 00:00"
+                  }
+               ],
+               "days":[
+                  {
+                     "day":"LUNES"
+                  },
+                  {
+                     "day":"MARTES"
+                  },
+                  {
+                     "day":"MIÉRCOLES"
+                  },
+                  {
+                     "day":"JUEVES"
+                  },
+                  {
+                     "day":"VIERNES"
+                  },
+                  {
+                     "day":"SÁBADO"
+                  },
+                  {
+                     "day":"DOMINGO"
+                  }
+               ],
+               "classes":[
+                  {
+                     "startTime":"16:00",
+                     "classroom":"B-606",
+                     "courseName":"Taller De Proyecto II",
+                     "day":"LUNES",
+                     "column":"1",
+                     "row":9,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"19:00",
+                     "multipleItemPosition":"1",
+                     "modules":3,
+                     "multipleItem":"false",
+                     "classroomType":"TEORÍA",
+                     "professorName":"Milton Enrique Chinchay Celada",
+                     "courseId":"SI410 WXA1 00"
+                  },
+                  {
+                     "startTime":"16:00",
+                     "classroom":"B-606",
+                     "courseName":"Taller De Proyecto II",
+                     "day":"LUNES",
+                     "column":"1",
+                     "row":9,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"19:00",
+                     "multipleItemPosition":"1",
+                     "modules":3,
+                     "multipleItem":"false",
+                     "classroomType":"TEORÍA",
+                     "professorName":"Víctor Manuel Juan Pablo Parasi Falcón",
+                     "courseId":"SI410 WXA1 00"
+                  },
+                  {
+                     "startTime":"19:00",
+                     "classroom":"B-704",
+                     "courseName":"Seminario de Investigación Académica II (Ing)",
+                     "day":"LUNES",
+                     "column":"1",
+                     "row":12,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"21:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"TEORÍA",
+                     "professorName":"Carlos Augusto Eyzaguirre Acosta",
+                     "courseId":"IN210 IX83 00"
+                  },
+                  {
+                     "startTime":"19:00",
+                     "classroom":"B-704",
+                     "courseName":"Seminario de Investigación Académica II (Ing)",
+                     "day":"LUNES",
+                     "column":"1",
+                     "row":12,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"21:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"TEORÍA",
+                     "professorName":"Elva Luz Castañeda Alvarado",
+                     "courseId":"IN210 IX83 00"
+                  },
+                  {
+                     "startTime":"19:00",
+                     "classroom":"B-704",
+                     "courseName":"Seminario de Investigación Académica II (Ing)",
+                     "day":"LUNES",
+                     "column":"1",
+                     "row":12,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"21:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"TEORÍA",
+                     "professorName":"Pedro Segundo Castañeda Vargas",
+                     "courseId":"IN210 IX83 00"
+                  },
+                  {
+                     "startTime":"09:00",
+                     "classroom":"B-504",
+                     "courseName":"Taller De Proyecto II",
+                     "day":"MARTES",
+                     "column":"2",
+                     "row":2,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"11:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"PRÁCTICA",
+                     "professorName":"Pedro Leoncio Acuña Arroyo",
+                     "courseId":"SI410 WXA1 02"
+                  },
+                  {
+                     "startTime":"16:00",
+                     "classroom":"B-606",
+                     "courseName":"Taller De Proyecto II",
+                     "day":"MIÉRCOLES",
+                     "column":"3",
+                     "row":9,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"19:00",
+                     "multipleItemPosition":"1",
+                     "modules":3,
+                     "multipleItem":"false",
+                     "classroomType":"TEORÍA",
+                     "professorName":"Milton Enrique Chinchay Celada",
+                     "courseId":"SI410 WXA1 00"
+                  },
+                  {
+                     "startTime":"19:00",
+                     "classroom":"B-609",
+                     "courseName":"Seminario de Investigación Académica II (Ing)",
+                     "day":"MIÉRCOLES",
+                     "column":"3",
+                     "row":12,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"21:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"PRÁCTICA",
+                     "professorName":"Carlos Augusto Eyzaguirre Acosta",
+                     "courseId":"IN210 IX83 00"
+                  },
+                  {
+                     "startTime":"19:00",
+                     "classroom":"B-609",
+                     "courseName":"Seminario de Investigación Académica II (Ing)",
+                     "day":"MIÉRCOLES",
+                     "column":"3",
+                     "row":12,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"21:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"PRÁCTICA",
+                     "professorName":"Elva Luz Castañeda Alvarado",
+                     "courseId":"IN210 IX83 00"
+                  },
+                  {
+                     "startTime":"19:00",
+                     "classroom":"B-609",
+                     "courseName":"Seminario de Investigación Académica II (Ing)",
+                     "day":"MIÉRCOLES",
+                     "column":"3",
+                     "row":12,
+                     "backgroundColor":"#F5F5F5",
+                     "campus":"CAMPUS SAN ISIDRO",
+                     "endTime":"21:00",
+                     "multipleItemPosition":"1",
+                     "modules":2,
+                     "multipleItem":"false",
+                     "classroomType":"PRÁCTICA",
+                     "professorName":"Jose Carlos Alvarez Merino",
+                     "courseId":"IN210 IX83 00"
+                  }
+               ],
+               "nextWeekToDisplay":"20/08/2017"
+            },
+            "message":""
+         }
+      }
+   }
 
     res.status(200).send(json)
 });
